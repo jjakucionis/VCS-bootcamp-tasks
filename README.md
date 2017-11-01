@@ -1,1 +1,1 @@
-# VCS-bootcamp-tasks
+Here are some solved tasks from VCS bootcamp

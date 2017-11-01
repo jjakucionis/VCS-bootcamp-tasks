@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Turime HTML form\uc0\u261 , kurios pagalba norime apskai\u269 iuoti automobilio nuomos kain\u261  (HTML/CSS kodas pateiktas apa\u269 ioje).\
+jQuery bibliotekos pagalba para\'9aykite kod\uc0\u261  kuris:\
+- Pasiimt\uc0\u371  automobilio pasirinkimo ir \u303 vesto dien\u371  skai\u269 iaus reik\'9ames,\
+- \'8aias reik\'9ames sudaugint\uc0\u371  ir pakeist\u371  0 \'80 \u303  atitinkam\u261  skaitin\u281  reik\'9am\u281  realiu laiku (pasirinkus automobil\u303  ir \u303 vedus dien\u371  skai\u269 i\u371  nereik\u279 t\u371  spausti nieko papildomai, kad matytume galutin\u303  rezultat\u261 ).\
+\
+B\uc0\u363 tinos s\u261 lygos:\
+- Neredaguoti HTML ir CSS kodo,\
+- Atsi\uc0\u371 sti tik JS/jQuery kodo dal\u303 ,\
+- Panaudoti turimas Javascript \'9einias ir optimizuoti pasikartojant\uc0\u303  kod\u261 ,\
+- Rezultatas turi keistis realiuoju laiku (i\'9a karto kai pasirenkame automobil\uc0\u303  arba \u303 vedame dien\u371  skai\u269 i\u371 ).\
+\
+HTML/CSS kodas:\
+\
+<!DOCTYPE html>\
+<html>\
+<head>\
+	<meta charset="utf-8">\
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">\
+	<title>jQuery u\'9eduotis</title>\
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">\
+	<style>\
+		* \{ box-sizing: border-box; \}\
+		html \{ font-family: Roboto, sans-serif; font-weight: 100; color: #fff; \}\
+		h1 \{ font-weight: 100; margin: 0; \}\
+		form.auto \{ max-width: 600px; width: 100%; margin: 0 auto; background-color: rgba(0,0,0,.5); border-radius: 20px 0; text-align: center; padding: 2em 1em; \}\
+		.banner \{ background-color: cadetblue; \}\
+		.banner-inner \{ max-width: 800px; width: 100%; margin: 0 auto; padding: 2em 1em; \}\
+		.form-inner \{ display: flex; flex-direction: column; \}\
+		.form-inner > * \{ margin-top: 1em; \}\
+		select, [type="text"] \{ padding: .5em 1em; border-radius: 10px 0; font-weight: 300; font-family: Roboto; text-transform: uppercase; \}\
+	</style>\
+</head>\
+<body>\
+	\
+	<section class="banner">\
+	\
+		<div class="banner-inner">\
+		\
+			<div class="banner-body">\
+			\
+				<form class="auto">\
+					\
+					<h1>Automobili\uc0\u371  nuoma</h1>\
+				\
+					<div class="form-inner">\
+						\
+						<select class="audi">\
+							<option value="0" selected disabled>Pasirinkite automobil\uc0\u303 </option>\
+							<option value="25">Audi A3</option>\
+							<option value="50">Audi A6</option>\
+							<option value="60">Audi A8</option>\
+							<option value="100">Audi S6</option>\
+							<option value="115">Audi S8</option>\
+						</select>\
+						\
+						<input name="days" type="text" placeholder="\uc0\u302 veskite dien\u371  skai\u269 i\u371 ">\
+						\
+						<div class="result">\
+						\
+							<p><span>0</span> &euro;</p>\
+						\
+						</div>\
+					\
+					</div>\
+				\
+				</form>\
+			\
+			</div>\
+		\
+		</div>\
+	\
+	</section>\
+	\
+	<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>\
+	<script src="scripts/main.js"></script>\
+</body>\
+</html>\
+}
