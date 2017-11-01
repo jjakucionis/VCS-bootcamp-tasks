@@ -1,0 +1,20 @@
+$(document).ready(function() {
+
+var days = $(".form-inner input:input"),
+    price = $(".form-inner .result p span ");
+
+$(".form-inner .audi").change(function() {
+    var daySum = days.val();
+    var auto = $(".form-inner .audi option:selected").val();
+    var j = auto * daySum;
+    return price.text(j);
+});
+
+days.keyup(function() {
+    var auto = $(".form-inner .audi option:selected").val();
+    var daySum = days.val();
+    var i = auto * daySum;
+    return price.text(i);
+});
+
+});

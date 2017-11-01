@@ -1,0 +1,5 @@
+var logas = "Lietuvoje šiuo metu laipsnių pagal Celsijų";
+var tempFarenheit = 26;
+var tempCelsijus = (tempFarenheit - 32) / 1.8;
+
+console.log(logas.replace("laipsnių pagal Celsijų", tempCelsijus.toFixed(1) + " laipsnių pagal Celsijų"));

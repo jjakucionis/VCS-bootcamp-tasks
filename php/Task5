@@ -1,0 +1,14 @@
+Žemiau pateikti duomenys iš duomenų bazės lentelės, kurioje registruojasi konkurso dalyviai. Mūsų užduotis burtų keliu nustatyti nugalėtoją.
+
+<p><?php echo winner_generator(array(
+	array('name' => 'Kajus'),
+	array('name' => 'Nojus'),
+	array('name' => 'Lukas'),
+	array('name' => 'Vaidas')
+),rand()); ?></p>
+
+Turime sukurti funkciją winner_generator, kurios pirmasis duotas parametras yra asocijuotas masyvas su duomenimis, tuo tarpu antrasis parametras yra rand funkcija, kuri generuoja atsitiktinį sveikąjį skaičių. Naudodami antrąjį parametrą (sveikąjį skaičių) turime rasti nugalėtoją iš asocijuoto masyvo, t.y. rand funkcijai grąžinus 1, gautume Kajaus vardą, 4 - Vaidą, 6 - Nojų. Rezultatas bus grąžinamas tiesiai į jau aprašytą paragrafą.
+
+Būtinos sąlygos:
+- Funkcija turi būti dinamiška. Pasikeitus elementų skaičiui masyve rezultatas turi būti teisingas,
+- Atsiųskite tik pačią funkciją (paragrafo dalies siųsti nereikia).

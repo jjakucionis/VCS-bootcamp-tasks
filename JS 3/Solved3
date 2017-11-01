@@ -1,0 +1,31 @@
+var posts = ["Sveikinu radus darbą", 
+            "Ar tikrai pabaigus kursą viskas bus gerai", 
+            "Javascript nėra Java", 
+            "Rasti video medžiagą visada šaunu"];
+
+
+function longestWords(input) { //funkcija loopina eilutes ir formuoja atsakymą  
+    var x = "";                    
+    for (i = 0; i < input.length; i++) {
+          
+        x += longestInLine(input[i]) + " ";
+        
+    }
+    return x;
+}
+
+function longestInLine (input) {  //funkcija tikrina ilgiausia žodį eilutėje
+    var arr = input.split(" ");    
+            var ilgis = 0;
+            var longest;
+    
+            for (var j = 0; j < arr.length; j++) {
+                if(arr[j].length > ilgis) {
+                    var ilgis = arr[j].length;
+                    longest = arr[j];
+                }
+            }
+            return longest;
+}
+            
+console.log(longestWords(posts));

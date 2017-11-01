@@ -1,0 +1,19 @@
+<?php  
+function winner_generator($dalyviai, $ranNumber) {
+
+    while ($ranNumber > 0) {
+
+    if ($ranNumber <= count($dalyviai)) {  
+        $i = $ranNumber - 1; 
+    }
+
+    else {
+        $i = ($ranNumber - 1) % count($dalyviai);
+        
+    }
+
+    return "Winner is ".$dalyviai[$i]['name'];
+    }
+}
+
+?>
