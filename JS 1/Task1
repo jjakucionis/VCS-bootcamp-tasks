@@ -1,0 +1,11 @@
+Šiuo metu Lietuvoje yra 26 laipsniai pagal Farenheitą, naudodamiesi JavaScript apskaičiuokite kokia temperatūra yra pagal Celsijų.
+
+Būtinos sąlygos:
+- Turime "string" kintamąjį su tekstu "Lietuvoje šiuo metu laipsnių pagal Celsijų"
+- Negalima rašyti jokio papildomo teksto (tarpai, raidės, žodžiai, išnaudokite turimą kintamąjį)
+- Temperatūra pagal Celsijų turi būti nurodyta vienas skaičius po kablelio
+- Temperatūra turi būti konvertuojama iš Farenheito į Celsijų
+- Rezultatą išvesti konsolėje
+
+Rezultatas:
+Lietuvoje šiuo metu -3.3 laipsnių pagal Celsijų
